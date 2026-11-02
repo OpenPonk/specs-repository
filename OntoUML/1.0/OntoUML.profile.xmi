@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
-    <uml:Profile xmi:type="uml:Profile" xmi:id="_0" URI="http://www.openponk.org/OntoUML/1.0" name="OntoUML">
+    <uml:Profile xmi:type="uml:Profile" xmi:id="_0" URI="https://openponk.org/OntoUML/1.0" name="OntoUML">
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Formal" isAbstract="true" name="Formal">
             <ownedAttribute xmi:type="uml:Property" xmi:id="Formal-base_Association" association="Association_Formal" name="base_Association">
                 <type xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Association"/>
@@ -33,6 +33,14 @@
                 <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="Meronymic-inseparable-_defaultValue"/>
                 <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#Boolean"/>
             </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="Meronymic-immutablePart" name="immutablePart">
+                <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="Meronymic-immutablePart-_defaultValue"/>
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#Boolean"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="Meronymic-immutableWhole" name="immutableWhole">
+                <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="Meronymic-immutableWhole-_defaultValue"/>
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#Boolean"/>
+            </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Extension" xmi:id="Association_Meronymic" memberEnd="Meronymic-base_Association Association_Meronymic-extension_Meronymic" name="Association_Meronymic">
             <ownedEnd xmi:type="uml:Property" xmi:id="Association_Meronymic-extension_Meronymic" aggregation="composite" association="Association_Meronymic" type="Meronymic" name="extension_Meronymic">
@@ -60,103 +68,103 @@
             </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Sortal" isAbstract="true" name="Sortal">
-            <generalization xmi:type="uml:Generalization" xmi:id="f496ffc7-8c6e-0d00-97cd-c81800b73ac9" general="Object"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="dd24dc5f-48e9-4c4b-8ef9-283e2f1b4b95" general="Object"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="MixinClass" isAbstract="true" name="MixinClass">
-            <generalization xmi:type="uml:Generalization" xmi:id="dc9affc7-8c6e-0d00-97ce-df5900b73ac9" general="Object"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="d0b1e1b7-0d46-1e41-bdc6-2b8212206753" general="Object"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="RigidSortal" isAbstract="true" name="RigidSortal">
-            <generalization xmi:type="uml:Generalization" xmi:id="c49effc7-8c6e-0d00-97cf-7f0000b73ac9" general="Sortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="e27921f3-1ca0-eb40-be05-f1d5cabc6275" general="Sortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="AntiRigidSortal" isAbstract="true" name="AntiRigidSortal">
-            <generalization xmi:type="uml:Generalization" xmi:id="c49effc7-8c6e-0d00-97d0-04fe00b73ac9" general="Sortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="92038a1a-bd9e-bd45-bacb-4bbdcd7dbc9b" general="Sortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="SubstanceSortal" isAbstract="true" name="SubstanceSortal">
-            <generalization xmi:type="uml:Generalization" xmi:id="aca2ffc7-8c6e-0d00-97d1-cc8f00b73ac9" general="RigidSortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="1743aece-2f6f-f942-8688-4ff1bd999d0b" general="RigidSortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="SubKind" name="SubKind">
-            <generalization xmi:type="uml:Generalization" xmi:id="94a6ffc7-8c6e-0d00-97d2-da6e00b73ac9" general="RigidSortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="4ffec846-385b-c54a-ab59-537f4d34bb59" general="RigidSortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Kind" name="Kind">
-            <generalization xmi:type="uml:Generalization" xmi:id="64aeffc7-8c6e-0d00-97d3-a4f800b73ac9" general="SubstanceSortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="fe7f565a-b3dd-d747-969f-263914b939fc" general="SubstanceSortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Quantity" name="Quantity">
-            <generalization xmi:type="uml:Generalization" xmi:id="4cb2ffc7-8c6e-0d00-97d4-ba0a00b73ac9" general="SubstanceSortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="c2cb58c6-146b-1f4d-a162-8b2785e83295" general="SubstanceSortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Collective" name="Collective">
-            <generalization xmi:type="uml:Generalization" xmi:id="4cb2ffc7-8c6e-0d00-97d5-03a400b73ac9" general="SubstanceSortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="ff043fe4-c213-5049-ab71-c419c6a04c2e" general="SubstanceSortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Phase" name="Phase">
-            <generalization xmi:type="uml:Generalization" xmi:id="34b6ffc7-8c6e-0d00-97d6-236200b73ac9" general="AntiRigidSortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="9b62b085-1199-1549-9078-2378b51847ac" general="AntiRigidSortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Role" name="Role">
-            <generalization xmi:type="uml:Generalization" xmi:id="34b6ffc7-8c6e-0d00-97d7-2d5b00b73ac9" general="AntiRigidSortal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="292e5be0-202e-d24c-948b-ba93ef361a96" general="AntiRigidSortal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="NonRigidMixin" isAbstract="true" name="NonRigidMixin">
-            <generalization xmi:type="uml:Generalization" xmi:id="1cbaffc7-8c6e-0d00-97d8-e2ee00b73ac9" general="MixinClass"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="fe708bb4-778a-c942-ae5e-a04504648e4e" general="MixinClass"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="RigidMixin" isAbstract="true" name="RigidMixin">
-            <generalization xmi:type="uml:Generalization" xmi:id="04beffc7-8c6e-0d00-97d9-b6ff00b73ac9" general="MixinClass"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="73d4f478-3e1b-334d-84bc-f1080cfc21c6" general="MixinClass"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="AntiRigidMixin" isAbstract="true" name="AntiRigidMixin">
-            <generalization xmi:type="uml:Generalization" xmi:id="04beffc7-8c6e-0d00-97da-26d000b73ac9" general="NonRigidMixin"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="7ceadb38-3c6f-d748-b51e-d090078345cf" general="NonRigidMixin"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="SemiRigidMixin" isAbstract="true" name="SemiRigidMixin">
-            <generalization xmi:type="uml:Generalization" xmi:id="ecc1ffc7-8c6e-0d00-97db-403c00b73ac9" general="NonRigidMixin"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="68828cfd-6551-5b46-9d7f-75fb38d3f8ff" general="NonRigidMixin"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="RoleMixin" name="RoleMixin">
-            <generalization xmi:type="uml:Generalization" xmi:id="ecc1ffc7-8c6e-0d00-97dc-5f1800b73ac9" general="AntiRigidMixin"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="ca310107-1a46-cf4b-b006-1beb99b94e74" general="AntiRigidMixin"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="PhaseMixin" name="PhaseMixin">
-            <generalization xmi:type="uml:Generalization" xmi:id="d4c5ffc7-8c6e-0d00-97dd-3bf200b73ac9" general="AntiRigidMixin"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="293c6360-42f8-f04f-b0f2-053dee773acb" general="AntiRigidMixin"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Mixin" name="Mixin">
-            <generalization xmi:type="uml:Generalization" xmi:id="d4c5ffc7-8c6e-0d00-97de-af3600b73ac9" general="SemiRigidMixin"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="b4a284ff-dd85-f34a-9f3e-1d3a8f464c38" general="SemiRigidMixin"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Category" name="Category">
-            <generalization xmi:type="uml:Generalization" xmi:id="bcc9ffc7-8c6e-0d00-97df-1cd200b73ac9" general="RigidMixin"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="03aedead-5466-9b4a-88d7-0f07c32e3283" general="RigidMixin"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Relator" name="Relator">
-            <generalization xmi:type="uml:Generalization" xmi:id="a4cdffc7-8c6e-0d00-97e0-2b8d00b73ac9" general="Moment"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="0035b551-e5d9-c346-b6f6-31ff8b2ea34f" general="Moment"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="IntrinsicMoment" isAbstract="true" name="IntrinsicMoment">
-            <generalization xmi:type="uml:Generalization" xmi:id="a4cdffc7-8c6e-0d00-97e1-776b00b73ac9" general="Moment"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="9da57705-d876-ef4d-b536-bcd6904d33c0" general="Moment"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Mode" name="Mode">
-            <generalization xmi:type="uml:Generalization" xmi:id="8cd1ffc7-8c6e-0d00-97e2-40ff00b73ac9" general="IntrinsicMoment"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="37ab493b-00f9-494e-b775-a4b7b7780189" general="IntrinsicMoment"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Quality" name="Quality">
-            <generalization xmi:type="uml:Generalization" xmi:id="5cd9ffc7-8c6e-0d00-97e3-5c2b00b73ac9" general="IntrinsicMoment"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="33e4c38c-0566-954d-8bac-9fc33a8e6926" general="IntrinsicMoment"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="BasicInternal" isAbstract="true" name="BasicInternal">
-            <generalization xmi:type="uml:Generalization" xmi:id="44ddffc7-8c6e-0d00-97e4-435700b73ac9" general="Formal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="fc795fa6-788d-0b47-abee-714445891824" general="Formal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="DomainFormal" name="DomainFormal">
-            <generalization xmi:type="uml:Generalization" xmi:id="44ddffc7-8c6e-0d00-97e5-3e2400b73ac9" general="Formal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="5386d51e-67a5-2948-9d9f-b34c2a8275c1" general="Formal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Characterization" name="Characterization">
-            <generalization xmi:type="uml:Generalization" xmi:id="2ce1ffc7-8c6e-0d00-97e6-c6cc00b73ac9" general="BasicInternal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="d5a9de51-efe0-7a4e-9e5d-ce23d3f12136" general="BasicInternal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Mediation" name="Mediation">
-            <generalization xmi:type="uml:Generalization" xmi:id="2ce1ffc7-8c6e-0d00-97e7-894200b73ac9" general="BasicInternal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="efc95bb1-d1f7-074d-b104-0d2c7e302f79" general="BasicInternal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Derivation" name="Derivation">
-            <generalization xmi:type="uml:Generalization" xmi:id="14e5ffc7-8c6e-0d00-97e8-5cc900b73ac9" general="BasicInternal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="f017e627-ae36-9644-ab4f-b07329868906" general="BasicInternal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="Containment" name="Containment">
-            <generalization xmi:type="uml:Generalization" xmi:id="fce8ffc7-8c6e-0d00-97e9-945d00b73ac9" general="BasicInternal"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="0338ba70-465f-7a41-b509-d5ad96950769" general="BasicInternal"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="ComponentOf" name="ComponentOf">
-            <generalization xmi:type="uml:Generalization" xmi:id="fce8ffc7-8c6e-0d00-97ea-669800b73ac9" general="Meronymic"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="7a6061cb-97c1-9242-bd49-68d18c25e76f" general="Meronymic"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="MemberOf" name="MemberOf">
-            <generalization xmi:type="uml:Generalization" xmi:id="fce8ffc7-8c6e-0d00-97eb-964d00b73ac9" general="Meronymic"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="84ffe338-3db5-4a4f-9bf0-733df6d02b2d" general="Meronymic"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="SubCollectionOf" name="SubCollectionOf">
-            <generalization xmi:type="uml:Generalization" xmi:id="e4ecffc7-8c6e-0d00-97ec-c5e300b73ac9" general="Meronymic"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="026ddf7f-42a4-9046-9f8b-eac9ae9f1268" general="Meronymic"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="SubQuantityOf" name="SubQuantityOf">
-            <generalization xmi:type="uml:Generalization" xmi:id="ccf0ffc7-8c6e-0d00-97ed-dcc500b73ac9" general="Meronymic"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="bf518181-c5c5-bd47-bbc1-510337cb2cd5" general="Meronymic"/>
         </packagedElement>
     </uml:Profile>
 </xmi:XMI>
